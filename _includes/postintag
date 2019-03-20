@@ -1,0 +1,1 @@
+{% for tag in page.tags %}{% for post in site.tags[tag] limit:include.num %}{% if post.id != page.id %}{% case include.view %}{% when 'list' %}{% include {{site.skin}}/view_list %}{% when 'grid' %}{% include {{site.skin}}/view_grid %}{% else %}{% include {{site.skin}}/view_li %}{% endcase %}{% endif %}{% endfor %}{% endfor %}

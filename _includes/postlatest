@@ -1,0 +1,10 @@
+{% for post in site.posts limit:include.num %}
+{% case include.view %}
+    {% when 'list' %}
+        {% include {{site.skin}}/view_list %}
+    {% when 'grid' %}
+        {% include {{site.skin}}/view_grid %}
+    {% else %}
+        {% include {{site.skin}}/view_li %}
+{% endcase %}
+{% endfor %}

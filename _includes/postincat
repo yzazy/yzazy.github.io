@@ -1,0 +1,1 @@
+{% for cat in page.categories %}{% for post in site.categories[cat] limit:include.num %}{% case include.view %}{% when 'list' %}{% include {{site.skin}}/view_list %}{% when 'grid' %}{% include {{site.skin}}/view_grid %}{% else %}{% include {{site.skin}}/view_li %}{% endcase %}{% endfor %}{% endfor %}

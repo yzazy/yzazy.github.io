@@ -1,0 +1,26 @@
+# Site settings
+baseurl: "" # /gh-pages
+asseturl: "/assets"
+skin: "yzazy"
+gtm: "GTM-TC766RK"
+ga: "UA-84530683-2"
+
+# langsite
+lang:
+ brandname: "YzAzY"
+ read_more: ">>"
+ view: "XEM"
+ showpostby: "danh mục: "
+ postincat: "cùng mục"
+ postintag: "cùng thẻ"
+ ghim: "nổi bật"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+paginate: 6
+paginate_path: /page:num
+
+plugins:
+ - jekyll-feed
+ - jekyll-paginate
